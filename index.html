@@ -56,7 +56,6 @@
         transition: all 300ms ease;
         display: none;
     }
-
     .buttonCopy:hover{
         transform: translateY(-5px);
     }
@@ -65,9 +64,9 @@
 <body>
     <div id="gSignInWrapper">
         <span class="label">Get token:</span>
-        <div id="customBtn" class="customGPlusSignIn">
+        <div id="customBtn" class="customGPlusSignIn" onclick="handleClickLogin()">
           <span class="icon"></span>
-          <span class="buttonText" onclick="handleClickLogin()">Google</span>
+          <span class="buttonText">Google</span>
         </div>
     </div>
     <div id="name"></div>
