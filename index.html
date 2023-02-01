@@ -78,11 +78,15 @@
 
        
         const handleClickLogin = () => {
+            
+            document.getElementById("copyBtn").style.display = "none"
+            document.getElementById("status").style.display = "none"
+            
             window.open("https://accounts.google.com/o/oauth2/v2/auth?" +
                 "scope=https%3A//www.googleapis.com/auth/chat.spaces https%3A//www.googleapis.com/auth/chat.memberships https://www.googleapis.com/auth/chat.messages https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file&" +
                 "response_type=token&" +
                 "redirect_uri=https://google-chat-sign-in.vercel.app/callback.html&" +
-                "client_id=536539213080-t7l9srr7epqvl4brojk76bp6sc1qv4te.apps.googleusercontent.com", "_blank", "height=400 width=400") 
+                "client_id=536539213080-t7l9srr7epqvl4brojk76bp6sc1qv4te.apps.googleusercontent.com", "_blank", "height=400 width=400")
             }
             var access_token = ""
             
