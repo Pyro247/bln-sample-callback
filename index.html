@@ -83,7 +83,7 @@
             document.getElementById("status").style.display = "none"
             
             window.open("https://accounts.google.com/o/oauth2/v2/auth?" +
-                "scope=https://www.googleapis.com/auth/tasks" +
+                "scope=https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/contacts" +
                 "&response_type=token&" +
                 "redirect_uri=https://google-chat-sign-in.vercel.app/callback.html&" +
                 "client_id=536539213080-t7l9srr7epqvl4brojk76bp6sc1qv4te.apps.googleusercontent.com", "_blank", "height=400 width=400")
