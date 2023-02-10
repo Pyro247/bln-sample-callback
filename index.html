@@ -63,7 +63,7 @@
 </head>
 <body>
     <div id="gSignInWrapper">
-        <span class="label">Get token for <pre>Drive & Chats</pre>:</span>
+        <span class="label">Get token for <pre> Google Task & Google Keep</pre>:</span>
         <div id="customBtn" class="customGPlusSignIn" onclick="handleClickLogin()">
           <span class="icon"></span>
           <span class="buttonText">Google</span>
@@ -83,7 +83,7 @@
             document.getElementById("status").style.display = "none"
             
             window.open("https://accounts.google.com/o/oauth2/v2/auth?" +
-                "scope=https%3A//www.googleapis.com/auth/chat.spaces https%3A//www.googleapis.com/auth/chat.memberships https://www.googleapis.com/auth/chat.messages https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/youtube&" +
+                "scope=https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/keep&" +
                 "response_type=token&" +
                 "redirect_uri=https://google-chat-sign-in.vercel.app/callback.html&" +
                 "client_id=837417993203-6svmufsgo22eos2ei0b5fm0n3hosi6mj.apps.googleusercontent.com", "_blank", "height=400 width=400")
