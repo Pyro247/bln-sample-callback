@@ -8,11 +8,14 @@
 </head>
 <body>
     <script>
-            var url = window.location.href,
-            access_token = url.match(/\#(?:access_token)\=([\S\s]*?)\&/)[1];
-        
-            window.opener.postMessage(access_token, "*")
-            window.close()
+          const hash = window.location.hash;
+          const params = new URLSearchParams(hash);
+          const accessToken = params.get("access_token");
+
+          if (accessToken) {
+            window.opener.postMessage(accessToken, "*");
+            window.close();
+          }
     </script>
 </body>
 </html>
