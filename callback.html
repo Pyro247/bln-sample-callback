@@ -11,9 +11,11 @@
           const hash = window.location.hash;
           const params = new URLSearchParams(hash);
           const accessToken = params.get("access_token");
+         const a2 = params.get("#access_token");
         
         console.log(window.location)
         console.log(accessToken)
+        console.log(a2)
 
           if (accessToken) {
             window.opener.postMessage(accessToken, "*");
